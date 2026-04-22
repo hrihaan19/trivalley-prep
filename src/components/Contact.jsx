@@ -54,7 +54,7 @@ export default function Contact() {
 
         <div className="mt-28 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="font-syne font-medium text-zinc-600 text-sm">
-            © 2025 <span className="text-accent">Tri-Valley Prep</span> · Dublin, CA
+            © 2026 <span className="text-accent">Tri-Valley Prep</span> · Dublin, CA
           </p>
           <p className="font-dm text-zinc-700 text-xs">Private SAT tutoring for Tri-Valley students.</p>
         </div>
