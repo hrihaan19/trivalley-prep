@@ -103,8 +103,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 44 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          Score 1500+.<br />
-          <span className="text-accent">Master the DSAT.</span>
+          Score 1500+<br />
+          <span className="text-accent">Master The DSAT.</span>
         </motion.h1>
 
         <motion.p
