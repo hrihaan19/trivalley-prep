@@ -12,9 +12,9 @@ const TESTIMONIALS = [
     badge: null, stars: 5,
   },
   {
-    name: 'Bhuvan K.', detail: 'Student · Tri-Valley',
+    name: 'Dylan C.', detail: 'Student · Tri-Valley',
     quote: "The custom plan targeted my actual weak spots instead of covering everything generically. Sessions were efficient and the progress was visible every single week.",
-    badge: '1200 → 1530', stars: 5,
+    badge: '1310 → 1520', stars: 5,
   },
 ];
 
