@@ -13,8 +13,7 @@ const TUTORS = [
     name: 'Utkarsh V.',
     role: 'Reading & Writing',
     bio: 'Hi there! My name is Utkarsh, I am an expert in SAT Reading & Writing with a strong preference in grammer/vocab questions. Scoring a 1540, I also focus on evidence-based comprehension, grammar by RULE, and passage elimination techniques.',
-    image: null,
-    initials: 'UV',
+    image: '/utkarsh.jpg',
   },
   {
     name: 'Atharva Y.',
