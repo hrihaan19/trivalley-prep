@@ -17,7 +17,7 @@ const TUTORS = [
   {
     name: 'Atharva Y.',
     role: 'SAT Math & English',
-    bio: 'Hey DUB community! Im Atharva and I bring deep subject knowledge and a personalized approach to every session. I am SO committed to helping Tri-Valley students close the gap between where they are and where they need to be. I scored a 1550!',
+    bio: 'Hey trivalley community! Im Atharva and I bring deep subject knowledge and a personalized approach to every session. I am SO committed to helping Tri-Valley students close the gap between where they are and where they need to be. I scored a 1550!',
     image: '/atharva.jpg',
     rotate: 90,
   },
