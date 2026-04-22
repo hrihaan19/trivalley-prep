@@ -86,7 +86,7 @@ export default function Services() {
         {/* Pricing */}
         <motion.div
           initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.7 }}
+          viewport={{ once: true, amount: 0.05 }} transition={{ duration: 0.7 }}
         >
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
             <div>
@@ -104,7 +104,7 @@ export default function Services() {
               <motion.div
                 key={pkg.name}
                 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
+                viewport={{ once: true, amount: 0.05 }}
                 transition={{ duration: 0.7, delay: i * 0.1 }}
                 className={`relative bg-surface border p-8 flex flex-col overflow-hidden transition-all duration-400 ${
                   pkg.name === 'Elite'
