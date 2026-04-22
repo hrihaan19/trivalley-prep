@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 const TESTIMONIALS = [
   {
     name: 'Rithvik J.', detail: 'Junior · Emerald High School',
-    quote: "Jumped 80 points in a single prep cycle. The Desmos strategies alone saved me minutes per section — time I used to leave on the table. Couldn't have hit 1540 without this.",
-    badge: '1460 → 1540', stars: 5,
+    quote: "The Desmos strategies alone saved me minutes per section — time I used to leave on the table. Going from a 430 to a 590 felt impossible before this.",
+    badge: '430 → 590', stars: 5,
   },
   {
     name: 'Veerraju A.', detail: 'Parent · Dublin, CA',
@@ -13,8 +13,8 @@ const TESTIMONIALS = [
   },
   {
     name: 'Bhuvan K.', detail: 'Student · Tri-Valley',
-    quote: "140-point jump. The custom plan actually targeted my weak spots instead of covering everything generically. Sessions were efficient and the progress was visible every week.",
-    badge: '1390 → 1530', stars: 5,
+    quote: "The custom plan targeted my actual weak spots instead of covering everything generically. Sessions were efficient and the progress was visible every single week.",
+    badge: '460 → 620', stars: 5,
   },
 ];
 
