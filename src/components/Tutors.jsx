@@ -19,6 +19,7 @@ const TUTORS = [
     role: 'SAT Math & English',
     bio: 'Hey DUB community! Im Atharva and I bring deep subject knowledge and a personalized approach to every session. I am SO committed to helping Tri-Valley students close the gap between where they are and where they need to be. I scored a 1550!',
     image: '/atharva.jpg',
+    rotate: 90,
   },
 ];
 
@@ -49,7 +50,7 @@ export default function Tutors() {
               {/* Square image */}
               <div className="relative w-full aspect-square bg-surface overflow-hidden">
                 {tutor.image ? (
-                  <img src={tutor.image} alt={tutor.name} className="absolute inset-0 w-full h-full object-cover object-top" />
+                  <img src={tutor.image} alt={tutor.name} className="absolute inset-0 w-full h-full object-cover object-top" style={tutor.rotate ? { transform: `rotate(${tutor.rotate}deg)` } : undefined} />
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                     <div className="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center">
