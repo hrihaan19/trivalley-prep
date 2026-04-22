@@ -5,19 +5,20 @@ const TUTORS = [
     name: 'Hrihaan B.',
     role: 'SAT Math · Desmos Specialist',
     bio: 'Hi! Im Hrihaan. I scored a perfect 800 on SAT Math with a 1560 overall. I specialize in in DESMOS strategy for the digital SAT — turning the graphing calculator into a scoring weapon. I am a junior at Emerald High School, Dublin, CA.',
-    initials: 'HB',
+    image: '/hrihaan.jpg',
   },
   {
     name: 'Utkarsh V.',
     role: 'Reading & Writing',
     bio: 'Hi there! My name is Utkarsh, I am an expert in SAT Reading & Writing with a strong preference in grammer/vocab questions. Scoring a 1540, I also focus on evidence-based comprehension, grammar by RULE, and passage elimination techniques.',
-    initials: 'RW',
+    image: null,
+    initials: 'UV',
   },
   {
-    name: 'Atharva Y',
+    name: 'Atharva Y.',
     role: 'SAT Math & English',
     bio: 'Hey DUB community! Im Atharva and I bring deep subject knowledge and a personalized approach to every session. I am SO committed to helping Tri-Valley students close the gap between where they are and where they need to be. I scored a 1550!',
-    initials: 'TV',
+    image: '/atharva.jpg',
   },
 ];
 
@@ -45,17 +46,18 @@ export default function Tutors() {
               transition={{ duration: 0.7, delay: i * 0.12 }}
               className="group flex flex-col border border-white/[0.08] bg-card hover:border-accent/40 transition-all duration-400"
             >
-              {/* Square image placeholder */}
+              {/* Square image */}
               <div className="relative w-full aspect-square bg-surface overflow-hidden">
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                  <div className="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center">
-                    <span className="font-syne font-black text-2xl text-accent">{tutor.initials}</span>
+                {tutor.image ? (
+                  <img src={tutor.image} alt={tutor.name} className="absolute inset-0 w-full h-full object-cover object-top" />
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                    <div className="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center">
+                      <span className="font-syne font-black text-2xl text-accent">{tutor.initials}</span>
+                    </div>
+                    <p className="font-dm text-zinc-700 text-xs tracking-widest uppercase">Photo</p>
                   </div>
-                  <p className="font-dm text-zinc-700 text-xs tracking-widest uppercase">Photo</p>
-                </div>
-                <div className="absolute inset-0 opacity-[0.03]"
-                  style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)', backgroundSize: '32px 32px' }}
-                />
+                )}
               </div>
 
               {/* Info */}
