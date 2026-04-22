@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 const TESTIMONIALS = [
   {
     name: 'Rithvik J.', detail: 'Junior · Emerald High School',
-    quote: "The Desmos strategies alone saved me minutes per section — time I used to leave on the table. Going from a 430 to a 590 felt impossible before this.",
-    badge: '430 → 590', stars: 5,
+    quote: "The Desmos strategies alone saved me minutes per section — time I used to leave on the table. Going from a 1180 to a 1540 felt impossible before this.",
+    badge: '1180 → 1540', stars: 5,
   },
   {
     name: 'Veerraju A.', detail: 'Parent · Dublin, CA',
@@ -14,7 +14,7 @@ const TESTIMONIALS = [
   {
     name: 'Bhuvan K.', detail: 'Student · Tri-Valley',
     quote: "The custom plan targeted my actual weak spots instead of covering everything generically. Sessions were efficient and the progress was visible every single week.",
-    badge: '460 → 620', stars: 5,
+    badge: '1200 → 1530', stars: 5,
   },
 ];
 
