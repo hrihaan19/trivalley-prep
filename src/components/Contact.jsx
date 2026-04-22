@@ -46,7 +46,7 @@ export default function Contact() {
           >
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/trivalleyprep26/sat-tutoring?hide_gdpr_banner=1&background_color=1f1f25&text_color=e4e4e7&primary_color=42c2ff"
+              data-url="https://calendly.com/trivalleyprep26/intro-call?hide_gdpr_banner=1&background_color=1f1f25&text_color=e4e4e7&primary_color=42c2ff"
               style={{ minWidth: '320px', height: '700px' }}
             />
           </motion.div>
