@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: 'The Edge', href: '#edge' },
   { label: 'Services', href: '#services' },
   { label: 'Process', href: '#process' },
+  { label: 'Tutors', href: '#tutors' },
   { label: 'Reviews', href: '#testimonials' },
 ];
 
