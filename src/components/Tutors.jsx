@@ -6,7 +6,7 @@ const TUTORS = [
     role: 'SAT Math · Desmos Specialist',
     bio: 'Hi! Im Hrihaan. I scored a perfect 800 on SAT Math with a 1560 overall. I specialize in in DESMOS strategy for the digital SAT — turning the graphing calculator into a scoring weapon. I am a junior at Emerald High School, Dublin, CA.',
     image: '/hrihaan.jpg',
-    objectPosition: 'center 20%',
+    objectPosition: 'center 5%',
   },
   {
     name: 'Utkarsh V.',
