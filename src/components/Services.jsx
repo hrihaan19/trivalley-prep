@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 
-const SERVICES = [
+const PACKAGES = [
+  { name: 'Starter', sessions: 4, price: 240, savings: null },
+  { name: 'Core', sessions: 8, price: 440, savings: 80 },
+  { name: 'Elite', sessions: 12, price: 600, savings: 180 },
+];
+
+const SUBJECTS = [
   {
     tag: 'Math',
     title: 'Digital SAT Math',
@@ -8,7 +14,7 @@ const SERVICES = [
     features: [
       'Desmos graphing calculator mastery from day one',
       'Digital SAT format, interface & timing strategy',
-      'Algebra, advanced math, data analysis deep dives',
+      'Algebra, advanced math, and data analysis deep dives',
       'Weekly full-length practice test reviews',
       'Score-ceiling analysis — find your cap and break it',
     ],
@@ -38,14 +44,15 @@ export default function Services() {
           viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-4 font-semibold">What we cover</p>
+          <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-4 font-semibold">What we offer</p>
           <h2 className="font-syne font-black text-white leading-none" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.5rem)' }}>
             Services.
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {SERVICES.map((svc, i) => (
+        {/* Subject cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-20">
+          {SUBJECTS.map((svc, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +67,6 @@ export default function Services() {
                 </span>
                 <h3 className="font-syne font-black text-white text-3xl leading-tight mb-1.5">{svc.title}</h3>
                 <p className="font-dm text-zinc-500 text-sm mb-8">{svc.subtitle}</p>
-
                 <ul className="space-y-3 mb-9">
                   {svc.features.map((f, j) => (
                     <li key={j} className="flex items-start gap-3">
@@ -69,7 +75,6 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-
                 <div className="border-t border-white/[0.06] pt-5">
                   <p className="font-dm text-zinc-600 text-xs italic">{svc.note}</p>
                 </div>
@@ -77,6 +82,59 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+
+        {/* Pricing */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.7 }}
+        >
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-3 font-semibold">Pricing</p>
+              <h3 className="font-syne font-black text-white text-4xl">Simple, flat rate.</h3>
+            </div>
+            <p className="font-dm text-zinc-500 text-sm">
+              <span className="text-white font-semibold text-2xl">$65</span>
+              <span className="text-zinc-600"> / hr &nbsp;·&nbsp; all tutors &nbsp;·&nbsp; 1-hour sessions</span>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {PACKAGES.map((pkg, i) => (
+              <motion.div
+                key={pkg.name}
+                initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-40px' }}
+                transition={{ duration: 0.7, delay: i * 0.1 }}
+                className={`relative bg-surface border p-8 flex flex-col overflow-hidden transition-all duration-400 ${
+                  pkg.name === 'Elite'
+                    ? 'border-accent/40'
+                    : 'border-white/[0.08] hover:border-accent/30'
+                }`}
+              >
+                {pkg.name === 'Elite' && (
+                  <span className="absolute top-0 right-0 font-dm text-[9px] tracking-[0.3em] uppercase bg-accent text-surface px-3 py-1 font-semibold">
+                    Best Value
+                  </span>
+                )}
+                <div className="mb-6">
+                  <p className="font-syne font-black text-white text-2xl mb-1">{pkg.name}</p>
+                  <p className="font-dm text-zinc-500 text-sm">{pkg.sessions} sessions &nbsp;·&nbsp; {pkg.sessions} hours</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-syne font-black text-white text-5xl">${pkg.price}</span>
+                </div>
+                <div className="border-t border-white/[0.06] pt-5 mt-auto">
+                  {pkg.savings ? (
+                    <p className="font-dm text-accent text-sm font-semibold">Save ${pkg.savings} vs. pay-per-session</p>
+                  ) : (
+                    <p className="font-dm text-zinc-600 text-sm">Pay-per-session rate</p>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
