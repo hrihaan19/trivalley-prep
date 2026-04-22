@@ -6,6 +6,7 @@ const TUTORS = [
     role: 'SAT Math · Desmos Specialist',
     bio: 'Hi! Im Hrihaan. I scored a perfect 800 on SAT Math with a 1560 overall. I specialize in in DESMOS strategy for the digital SAT — turning the graphing calculator into a scoring weapon. I am a junior at Emerald High School, Dublin, CA.',
     image: '/hrihaan.jpg',
+    objectPosition: 'center 20%',
   },
   {
     name: 'Utkarsh V.',
@@ -50,7 +51,7 @@ export default function Tutors() {
               {/* Square image */}
               <div className="relative w-full aspect-square bg-surface overflow-hidden">
                 {tutor.image ? (
-                  <img src={tutor.image} alt={tutor.name} className="absolute inset-0 w-full h-full object-cover object-top" style={tutor.rotate ? { transform: `rotate(${tutor.rotate}deg)` } : undefined} />
+                  <img src={tutor.image} alt={tutor.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: tutor.objectPosition || 'center top', ...(tutor.rotate ? { transform: `rotate(${tutor.rotate}deg)` } : {}) }} />
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                     <div className="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center">
