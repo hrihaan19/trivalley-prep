@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TheEdge from './components/TheEdge';
@@ -18,6 +19,7 @@ export default function App() {
       <Tutors />
       <Testimonials />
       <Contact />
+      <Analytics />
     </main>
   );
 }
