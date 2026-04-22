@@ -4,19 +4,19 @@ const TUTORS = [
   {
     name: 'Hrihaan B.',
     role: 'SAT Math · Desmos Specialist',
-    bio: 'Scored 800 on SAT Math. Specializes in Desmos-first strategy for the digital SAT — turning the graphing calculator into a scoring weapon. Junior at Emerald High School, Dublin, CA.',
+    bio: 'Hi! Im Hrihaan. I scored a perfect 800 on SAT Math with a 1560 overall. I specialize in in DESMOS strategy for the digital SAT — turning the graphing calculator into a scoring weapon. I am a junior at Emerald High School, Dublin, CA.',
     initials: 'HB',
   },
   {
-    name: 'Tutor Name',
+    name: 'Utkarsh V.',
     role: 'Reading & Writing',
-    bio: 'Expert in SAT Reading & Writing with a strong Tri-Valley track record. Focuses on evidence-based comprehension, grammar by rule, and passage elimination techniques.',
+    bio: 'Hi there! My name is Utkarsh, I am an expert in SAT Reading & Writing with a strong preference in grammer/vocab questions. Scoring a 1540, I also focus on evidence-based comprehension, grammar by RULE, and passage elimination techniques.',
     initials: 'RW',
   },
   {
-    name: 'Tutor Name',
+    name: 'Atharva Y',
     role: 'SAT Math & English',
-    bio: 'Bringing deep subject knowledge and a personalized approach to every session. Committed to helping Tri-Valley students close the gap between where they are and where they need to be.',
+    bio: 'Hey DUB community! Im Atharva and I bring deep subject knowledge and a personalized approach to every session. I am SO committed to helping Tri-Valley students close the gap between where they are and where they need to be. I scored a 1550!',
     initials: 'TV',
   },
 ];
