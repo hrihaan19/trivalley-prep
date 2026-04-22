@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         <a href="#" className="font-syne font-bold text-lg text-white select-none">
-          <span className="text-accent">Emerald</span> Prep
+          <span className="text-accent">Tri-Valley</span> Prep
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
