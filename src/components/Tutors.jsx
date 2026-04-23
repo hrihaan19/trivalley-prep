@@ -11,7 +11,7 @@ export default function Tutors() {
         >
           <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-4 font-semibold">Who teaches you</p>
           <h2 className="font-syne font-black text-white leading-none" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.5rem)' }}>
-            The tutors.
+            Meet the founder.
           </h2>
         </motion.div>
 
