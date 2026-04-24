@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const PACKAGES = [
-  { name: 'Starter', sessions: 4, price: 240, savings: null },
-  { name: 'Core', sessions: 8, price: 440, savings: 80 },
-  { name: 'Elite', sessions: 12, price: 600, savings: 180 },
+  { name: 'Starter', sessions: 4, price: 240, originalPrice: 340, savings: null },
+  { name: 'Core', sessions: 8, price: 440, originalPrice: 680, savings: 80 },
+  { name: 'Elite', sessions: 12, price: 600, originalPrice: 1020, savings: 180 },
 ];
 
 const SUBJECTS = [
@@ -92,11 +92,15 @@ export default function Services() {
             <div>
               <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-3 font-semibold">Pricing</p>
               <h3 className="font-syne font-black text-white text-4xl">Simple, flat rate.</h3>
+              <p className="font-dm text-accent text-xs tracking-widest uppercase mt-2 font-semibold">Limited time offer</p>
             </div>
-            <p className="font-dm text-zinc-500 text-sm">
-              <span className="text-white font-semibold text-2xl">$65</span>
-              <span className="text-zinc-600"> / hr &nbsp;·&nbsp; all tutors &nbsp;·&nbsp; 1-hour sessions</span>
-            </p>
+            <div className="font-dm text-zinc-500 text-sm flex flex-col items-start sm:items-end gap-1">
+              <span className="text-zinc-600 line-through text-base">$85 / hr</span>
+              <span>
+                <span className="text-white font-semibold text-2xl">$65</span>
+                <span className="text-zinc-600"> / hr &nbsp;·&nbsp; limited time</span>
+              </span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -122,6 +126,7 @@ export default function Services() {
                   <p className="font-dm text-zinc-500 text-sm">{pkg.sessions} sessions &nbsp;·&nbsp; {pkg.sessions} hours</p>
                 </div>
                 <div className="mb-6">
+                  <div className="font-dm text-zinc-600 line-through text-base mb-1">${pkg.originalPrice}</div>
                   <span className="font-syne font-black text-white text-5xl">${pkg.price}</span>
                 </div>
                 <div className="border-t border-white/[0.06] pt-5 mt-auto">
