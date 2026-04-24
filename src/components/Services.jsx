@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const PACKAGES = [
   { name: 'Starter', sessions: 4, price: 240, originalPrice: 340, savings: null },
   { name: 'Core', sessions: 8, price: 440, originalPrice: 680, savings: 80 },
-  { name: 'Elite', sessions: 12, price: 600, originalPrice: 1020, savings: 180 },
+  { name: 'Elite', sessions: 12, price: 750, originalPrice: 1020, savings: 270 },
 ];
 
 const SUBJECTS = [
