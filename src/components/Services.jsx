@@ -94,8 +94,8 @@ export default function Services() {
               <h3 className="font-syne font-black text-white text-4xl">Simple, flat rate.</h3>
               <p className="font-dm text-accent text-xs tracking-widest uppercase mt-2 font-semibold">Limited time offer</p>
             </div>
-            <div className="font-dm text-zinc-500 text-sm flex flex-col items-start sm:items-end gap-1">
-              <span className="text-zinc-600 line-through text-base">$85 / hr</span>
+            <div className="font-dm text-sm flex flex-col items-start sm:items-end gap-1">
+              <span className="text-zinc-400 line-through text-xl font-semibold">$85 / hr</span>
               <span>
                 <span className="text-white font-semibold text-2xl">$65</span>
                 <span className="text-zinc-600"> / hr &nbsp;·&nbsp; limited time</span>
@@ -126,7 +126,7 @@ export default function Services() {
                   <p className="font-dm text-zinc-500 text-sm">{pkg.sessions} sessions &nbsp;·&nbsp; {pkg.sessions} hours</p>
                 </div>
                 <div className="mb-6">
-                  <div className="font-dm text-zinc-600 line-through text-base mb-1">${pkg.originalPrice}</div>
+                  <div className="font-dm text-zinc-400 line-through text-2xl font-semibold mb-1">${pkg.originalPrice}</div>
                   <span className="font-syne font-black text-white text-5xl">${pkg.price}</span>
                 </div>
                 <div className="border-t border-white/[0.06] pt-5 mt-auto">
