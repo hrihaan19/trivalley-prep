@@ -92,13 +92,13 @@ export default function Services() {
             <div>
               <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-3 font-semibold">Pricing</p>
               <h3 className="font-syne font-black text-white text-4xl">Simple, flat rate.</h3>
-              <p className="font-dm text-accent text-xs tracking-widest uppercase mt-2 font-semibold">Limited time offer</p>
+              <p className="font-dm text-red-500 text-sm tracking-widest uppercase mt-2 font-bold">LIMITED TIME OFFER</p>
             </div>
             <div className="font-dm text-sm flex flex-col items-start sm:items-end gap-1">
               <span className="text-red-500 line-through text-xl font-semibold">$85 / hr</span>
               <span>
                 <span className="text-white font-semibold text-2xl">$65</span>
-                <span className="text-zinc-600"> / hr &nbsp;·&nbsp; limited time</span>
+                <span className="text-zinc-600"> / hr</span>
               </span>
             </div>
           </div>
