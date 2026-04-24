@@ -8,7 +8,7 @@ const PACKAGES = [
 
 const SUBJECTS = [
   {
-    tag: 'Available Now',
+    tag: 'Math',
     title: 'Digital SAT Math',
     subtitle: 'Desmos-First Strategy',
     features: [
@@ -19,10 +19,9 @@ const SUBJECTS = [
       'Score-ceiling analysis — find your cap and break it',
     ],
     note: 'Taught by a student who scored 800 on SAT Math.',
-    active: true,
   },
   {
-    tag: 'Coming Soon',
+    tag: 'English',
     title: 'Reading & Writing',
     subtitle: 'Evidence-Based Mastery',
     features: [
@@ -32,8 +31,7 @@ const SUBJECTS = [
       'Vocabulary in context — what College Board actually tests',
       'Full-section timing drills with error pattern review',
     ],
-    note: 'Expanding soon — join the waitlist when you book.',
-    active: false,
+    note: 'Expert partner tutor with a strong Tri-Valley track record.',
   },
 ];
 
@@ -60,24 +58,20 @@ export default function Services() {
               initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.7, delay: i * 0.12 }}
-              className={`group relative bg-surface border p-10 transition-all duration-400 overflow-hidden ${
-                svc.active ? 'border-white/[0.08] hover:border-accent/40' : 'border-white/[0.04] opacity-60'
-              }`}
+              className="group relative bg-surface border border-white/[0.08] p-10 hover:border-accent/40 transition-all duration-400 overflow-hidden"
             >
-              {svc.active && <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-accent group-hover:w-full transition-all duration-600 pointer-events-none" />}
+              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-accent group-hover:w-full transition-all duration-600 pointer-events-none" />
               <div className="relative">
-                <span className={`inline-block font-dm text-[10px] tracking-[0.35em] uppercase px-3 py-1 mb-8 font-semibold border ${
-                  svc.active ? 'text-accent border-accent/30' : 'text-zinc-600 border-zinc-700'
-                }`}>
+                <span className="inline-block font-dm text-[10px] tracking-[0.35em] uppercase text-accent border border-accent/30 px-3 py-1 mb-8 font-semibold">
                   {svc.tag}
                 </span>
-                <h3 className={`font-syne font-black text-3xl leading-tight mb-1.5 ${svc.active ? 'text-white' : 'text-zinc-500'}`}>{svc.title}</h3>
+                <h3 className="font-syne font-black text-white text-3xl leading-tight mb-1.5">{svc.title}</h3>
                 <p className="font-dm text-zinc-500 text-sm mb-8">{svc.subtitle}</p>
                 <ul className="space-y-3 mb-9">
                   {svc.features.map((f, j) => (
                     <li key={j} className="flex items-start gap-3">
-                      <span className={`mt-[7px] w-1 h-1 rounded-full flex-shrink-0 ${svc.active ? 'bg-accent' : 'bg-zinc-700'}`} />
-                      <span className={`font-dm text-sm leading-relaxed ${svc.active ? 'text-zinc-400' : 'text-zinc-600'}`}>{f}</span>
+                      <span className="mt-[7px] w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                      <span className="font-dm text-zinc-400 text-sm leading-relaxed">{f}</span>
                     </li>
                   ))}
                 </ul>
