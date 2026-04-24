@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const PACKAGES = [
-  { name: 'Starter', sessions: 4, price: 220, savings: null },
-  { name: 'Core', sessions: 8, price: 360, savings: 80 },
-  { name: 'Elite', sessions: 12, price: 480, savings: 180 },
+  { name: 'Starter', sessions: 4, price: 240, savings: null },
+  { name: 'Core', sessions: 8, price: 440, savings: 80 },
+  { name: 'Elite', sessions: 12, price: 600, savings: 180 },
 ];
 
 const SUBJECTS = [
@@ -100,7 +100,7 @@ export default function Services() {
               <h3 className="font-syne font-black text-white text-4xl">Simple, flat rate.</h3>
             </div>
             <p className="font-dm text-zinc-500 text-sm">
-              <span className="text-white font-semibold text-2xl">$55</span>
+              <span className="text-white font-semibold text-2xl">$65</span>
               <span className="text-zinc-600"> / hr &nbsp;·&nbsp; all tutors &nbsp;·&nbsp; 1-hour sessions</span>
             </p>
           </div>
