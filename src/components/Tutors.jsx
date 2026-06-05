@@ -12,7 +12,7 @@ const TUTORS = [
   {
     name: 'Utkarsh V.',
     role: 'Reading & Writing',
-    bio: "Hi there! My name is Utkarsh, I failed the SAT multiple times and recently scored a 1370. I usually just learn from the other tutors you see on this page but I still think I'm qualified to teach your kids. Let me know if I can help! (I also never got above 1500 on the SAT).",
+    bio: 'Hi there! My name is Utkarsh, I am an expert in SAT Reading & Writing with a strong preference in grammer/vocab questions. Scoring a 1540, I also focus on evidence-based comprehension, grammar by RULE, and passage elimination techniques.',
     image: '/utkarsh.jpg',
   },
   {
