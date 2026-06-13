@@ -22,6 +22,12 @@ const TUTORS = [
     image: '/atharva.jpg',
     rotate: 90,
   },
+  {
+    name: 'Rishi N.',
+    role: 'SAT Math & English',
+    bio: 'Hey! My name is Rishi and I am a rising Senior at Emerald High. I love teaching both Math and English for the SAT. I achieved a 1540 on the SAT myself, and have helped several of my friends gain higher SAT scores, ranging from 50-250 points!',
+    initials: 'RN',
+  },
 ];
 
 export default function Tutors() {
@@ -39,7 +45,7 @@ export default function Tutors() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {TUTORS.map((tutor, i) => (
             <motion.div
               key={i}
