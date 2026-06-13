@@ -1,38 +1,56 @@
 import { motion } from 'framer-motion';
 
-const PACKAGES = [
-  { name: 'Starter', sessions: 4, price: 240, originalPrice: 340, savings: null },
-  { name: 'Core', sessions: 8, price: 480, originalPrice: 680, savings: 200 },
-  { name: 'Elite', sessions: 12, price: 720, originalPrice: 1020, savings: 300 },
-];
-
-const SUBJECTS = [
+const PROGRAMS = [
   {
-    tag: 'Math',
-    title: 'Digital SAT Math',
-    subtitle: 'Desmos-First Strategy',
+    tag: 'SAT Prep',
+    title: 'Digital SAT',
+    subtitle: 'Math & Reading & Writing',
+    audience: 'High School',
     features: [
-      'Desmos graphing calculator mastery from day one',
+      'Desmos graphing calculator strategy for SAT Math',
       'Digital SAT format, interface & timing strategy',
-      'Algebra, advanced math, and data analysis deep dives',
-      'Weekly full-length practice test reviews',
-      'Score-ceiling analysis — find your cap and break it',
-    ],
-    note: 'Taught by a student who scored 800 on SAT Math.',
-  },
-  {
-    tag: 'English',
-    title: 'Reading & Writing',
-    subtitle: 'Evidence-Based Mastery',
-    features: [
       'Reading comprehension — structure over summary',
       'Grammar & conventions by rule, not by feel',
-      'Passage elimination & POE techniques',
-      'Vocabulary in context — what College Board actually tests',
-      'Full-section timing drills with error pattern review',
+      'Weekly full-length practice test reviews',
     ],
-    note: 'Expert partner tutor with a strong Tri-Valley track record.',
+    note: 'Taught by tutors who scored 1540–1560 on the SAT.',
+    highlight: true,
   },
+  {
+    tag: 'Middle School',
+    title: 'Integrated Math 1',
+    subtitle: 'Foundations & Problem Solving',
+    audience: 'Middle School',
+    features: [
+      'Linear equations, inequalities & functions',
+      'Geometry fundamentals and reasoning',
+      'Statistics and data interpretation',
+      'Real-world problem solving strategies',
+      'Personalized pace — no one gets left behind',
+    ],
+    note: 'Built for students entering or currently in IM1.',
+  },
+  {
+    tag: 'Middle School',
+    title: 'Integrated Math 2',
+    subtitle: 'Algebra, Geometry & Beyond',
+    audience: 'Middle School',
+    features: [
+      'Quadratic functions and polynomial operations',
+      'Triangle theorems and circle geometry',
+      'Probability and statistical reasoning',
+      'Proofs, logic, and mathematical argumentation',
+      'Bridges concepts toward high school math',
+    ],
+    note: 'Built for students entering or currently in IM2.',
+  },
+];
+
+const COHORT_DETAILS = [
+  { label: '3 Weeks', sub: 'per cohort' },
+  { label: 'Daily', sub: 'morning calls' },
+  { label: 'Sun – Sat', sub: 'every day of the week' },
+  { label: 'Flexible', sub: 'join the classes that work for you' },
 ];
 
 export default function Services() {
@@ -46,29 +64,53 @@ export default function Services() {
         >
           <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-4 font-semibold">What we offer</p>
           <h2 className="font-syne font-black text-white leading-none" style={{ fontSize: 'clamp(2.8rem, 6vw, 5.5rem)' }}>
-            Services.
+            Summer programs.
           </h2>
+          <p className="font-dm text-zinc-400 text-base mt-5 max-w-xl leading-relaxed">
+            SAT prep for high schoolers and Integrated Math for middle schoolers — all in a cohort format built around your summer schedule.
+          </p>
         </motion.div>
 
-        {/* Subject cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-20">
-          {SUBJECTS.map((svc, i) => (
+        {/* Cohort format strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.6 }}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.06] border border-white/[0.06] mb-16 overflow-hidden"
+        >
+          {COHORT_DETAILS.map((item, i) => (
+            <div key={i} className="bg-surface px-6 py-7 flex flex-col gap-1">
+              <span className="font-syne font-black text-white text-2xl">{item.label}</span>
+              <span className="font-dm text-zinc-500 text-xs tracking-wide">{item.sub}</span>
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Program cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          {PROGRAMS.map((prog, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.7, delay: i * 0.12 }}
-              className="group relative bg-surface border border-white/[0.08] p-10 hover:border-accent/40 transition-all duration-400 overflow-hidden"
+              className={`group relative bg-surface border p-10 flex flex-col hover:border-accent/40 transition-all duration-400 overflow-hidden ${
+                prog.highlight ? 'border-accent/30' : 'border-white/[0.08]'
+              }`}
             >
-              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-accent group-hover:w-full transition-all duration-600 pointer-events-none" />
-              <div className="relative">
-                <span className="inline-block font-dm text-[10px] tracking-[0.35em] uppercase text-accent border border-accent/30 px-3 py-1 mb-8 font-semibold">
-                  {svc.tag}
+              {prog.highlight && (
+                <span className="absolute top-0 right-0 font-dm text-[9px] tracking-[0.3em] uppercase bg-accent text-surface px-3 py-1 font-semibold">
+                  Featured
                 </span>
-                <h3 className="font-syne font-black text-white text-3xl leading-tight mb-1.5">{svc.title}</h3>
-                <p className="font-dm text-zinc-500 text-sm mb-8">{svc.subtitle}</p>
-                <ul className="space-y-3 mb-9">
-                  {svc.features.map((f, j) => (
+              )}
+              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-accent group-hover:w-full transition-all duration-600 pointer-events-none" />
+              <div className="relative flex flex-col flex-1">
+                <span className="inline-block font-dm text-[10px] tracking-[0.35em] uppercase text-accent border border-accent/30 px-3 py-1 mb-8 font-semibold self-start">
+                  {prog.tag}
+                </span>
+                <h3 className="font-syne font-black text-white text-3xl leading-tight mb-1.5">{prog.title}</h3>
+                <p className="font-dm text-zinc-500 text-sm mb-8">{prog.subtitle}</p>
+                <ul className="space-y-3 mb-9 flex-1">
+                  {prog.features.map((f, j) => (
                     <li key={j} className="flex items-start gap-3">
                       <span className="mt-[7px] w-1 h-1 rounded-full bg-accent flex-shrink-0" />
                       <span className="font-dm text-zinc-400 text-sm leading-relaxed">{f}</span>
@@ -76,70 +118,12 @@ export default function Services() {
                   ))}
                 </ul>
                 <div className="border-t border-white/[0.06] pt-5">
-                  <p className="font-dm text-zinc-600 text-xs italic">{svc.note}</p>
+                  <p className="font-dm text-zinc-600 text-xs italic">{prog.note}</p>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
-        {/* Pricing */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.05 }} transition={{ duration: 0.7 }}
-        >
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-            <div>
-              <p className="font-dm text-zinc-500 text-[11px] tracking-[0.4em] uppercase mb-3 font-semibold">Pricing</p>
-              <h3 className="font-syne font-black text-white text-4xl">Simple, flat rate.</h3>
-              <p className="font-dm text-red-500 text-sm tracking-widest uppercase mt-2 font-bold">LIMITED TIME OFFER</p>
-            </div>
-            <div className="font-dm text-sm flex flex-col items-start sm:items-end gap-1">
-              <span className="text-red-500 line-through text-xl font-semibold">$85 / hr</span>
-              <span>
-                <span className="text-white font-semibold text-2xl">$65</span>
-                <span className="text-zinc-600"> / hr</span>
-              </span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {PACKAGES.map((pkg, i) => (
-              <motion.div
-                key={pkg.name}
-                initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.05 }}
-                transition={{ duration: 0.7, delay: i * 0.1 }}
-                className={`relative bg-surface border p-8 flex flex-col overflow-hidden transition-all duration-400 ${
-                  pkg.name === 'Elite'
-                    ? 'border-accent/40'
-                    : 'border-white/[0.08] hover:border-accent/30'
-                }`}
-              >
-                {pkg.name === 'Elite' && (
-                  <span className="absolute top-0 right-0 font-dm text-[9px] tracking-[0.3em] uppercase bg-accent text-surface px-3 py-1 font-semibold">
-                    Best Value
-                  </span>
-                )}
-                <div className="mb-6">
-                  <p className="font-syne font-black text-white text-2xl mb-1">{pkg.name}</p>
-                  <p className="font-dm text-zinc-500 text-sm">{pkg.sessions} sessions &nbsp;·&nbsp; {pkg.sessions} hours</p>
-                </div>
-                <div className="mb-6">
-                  <div className="font-dm text-red-500 line-through text-2xl font-semibold mb-1">${pkg.originalPrice}</div>
-                  <span className="font-syne font-black text-white text-5xl">${pkg.price}</span>
-                </div>
-                <div className="border-t border-white/[0.06] pt-5 mt-auto">
-                  {pkg.savings ? (
-                    <p className="font-dm text-accent text-sm font-semibold">Save ${pkg.savings} vs. pay-per-session</p>
-                  ) : (
-                    <p className="font-dm text-zinc-600 text-sm">Pay-per-session rate</p>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
