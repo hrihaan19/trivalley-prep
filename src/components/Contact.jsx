@@ -52,11 +52,29 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        <div className="mt-28 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="font-syne font-medium text-zinc-600 text-sm">
-            © 2026 <span className="text-accent">Tri-Valley Prep</span> · Dublin, CA
-          </p>
-          <p className="font-dm text-zinc-700 text-xs">Private SAT tutoring for Tri-Valley students.</p>
+        {/* Service areas footer — keyword-rich, visible to Google */}
+        <div className="mt-28 pt-10 border-t border-white/[0.05]">
+          <div className="mb-10">
+            <p className="font-dm text-zinc-600 text-[11px] tracking-[0.35em] uppercase mb-5 font-semibold">Serving the Tri-Valley &amp; East Bay</p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
+              {[
+                'Dublin, CA', 'Pleasanton, CA', 'San Ramon, CA', 'Livermore, CA',
+                'Danville, CA', 'Alamo, CA', 'Castro Valley, CA', 'Fremont, CA', 'Walnut Creek, CA',
+              ].map(city => (
+                <span key={city} className="font-dm text-zinc-600 text-xs">{city}</span>
+              ))}
+            </div>
+            <p className="font-dm text-zinc-700 text-xs mt-4 max-w-lg leading-relaxed">
+              SAT tutoring &amp; Integrated Math (IM1 / IM2) for high school and middle school students across the Tri-Valley. Summer cohorts, daily morning sessions, flexible attendance. Online sessions available everywhere.
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+            <p className="font-syne font-medium text-zinc-600 text-sm">
+              © 2026 <span className="text-accent">Tri-Valley Prep</span> · Dublin, CA
+            </p>
+            <p className="font-dm text-zinc-700 text-xs">SAT tutoring &amp; math tutoring for Tri-Valley students.</p>
+          </div>
         </div>
       </div>
     </section>
