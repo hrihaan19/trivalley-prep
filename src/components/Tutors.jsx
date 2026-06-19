@@ -4,7 +4,7 @@ const TUTORS = [
   {
     name: 'Hrihaan B.',
     role: 'SAT Math · Desmos Specialist',
-    bio: 'Hi! Im Hrihaan, a rising Senior at Emerald High. I scored a perfect 800 on SAT Math with a 1580 overall, and I teach both SAT prep and Integrated Math — specializing in Desmos strategy and the problem-solving patterns that show up across both.',
+    bio: 'Hi! I\'m Hrihaan, a rising Senior at Emerald High. I scored a 1580 on the SAT — including a perfect 800 on Math — and teach both SAT prep and Integrated Math, specializing in Desmos strategy and the problem-solving patterns that show up across both.',
     image: '/hrihaan.jpg',
     objectPosition: 'center 5%',
     scale: 1.2,
@@ -12,20 +12,20 @@ const TUTORS = [
   {
     name: 'Utkarsh V.',
     role: 'Reading & Writing',
-    bio: 'Hi! My name is Utkarsh, a rising Senior at Emerald High. I scored a 1570 on the SAT and specialize in Reading & Writing and Integrated Math. From evidence-based comprehension and grammar by rule, to IM coursework — I help students build skills that transfer across every class.',
+    bio: 'Hi! I\'m Utkarsh, a rising Senior at Emerald High. I scored a 1570 on the SAT — 800 in English — and specialize in Reading & Writing and Integrated Math. From evidence-based comprehension and grammar by rule, to IM coursework, I help students build skills that transfer across every class.',
     image: '/utkarsh.jpg',
   },
   {
     name: 'Atharva Y.',
     role: 'SAT Math & English',
-    bio: 'Hey Tri-Valley! I\'m Atharva, a rising Senior at Dublin High. I scored a 1570 on the SAT and teach SAT Math, English, and Integrated Math. I bring deep subject knowledge and a personalized approach — committed to helping every student close the gap between where they are and where they need to be.',
+    bio: 'Hey Tri-Valley! I\'m Atharva, a rising Senior at Dublin High. I scored a 1570 on the SAT and teach SAT Math, English, and Integrated Math. Deep subject knowledge, personalized approach — I\'m committed to helping every student close the gap between where they are and where they need to be.',
     image: '/atharva.jpg',
     rotate: 90,
   },
   {
     name: 'Rishi N.',
     role: 'SAT Math & English',
-    bio: 'Hey! My name is Rishi and I am a rising Senior at Emerald High. I scored a 1560 on the SAT and love teaching both SAT Math & English and Integrated Math. I\'ve helped friends and students gain 50–250 points on the SAT and level up in their math classes too!',
+    bio: 'Hey! I\'m Rishi, a rising Senior at Emerald High. I scored a 1560 on the SAT and love teaching both SAT Math & English and Integrated Math. I\'ve helped students gain 50–250 points on the SAT and level up in their math classes — and I\'m just getting started.',
     image: '/rishi.jpg',
     objectPosition: 'center 15%',
   },

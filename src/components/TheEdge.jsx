@@ -20,9 +20,10 @@ function CountUp({ to, duration = 2000 }) {
 
 const STATS = [
   {
-    display: 'number', value: 1580,
-    label: 'Top Tutor SAT Score',
-    desc: "Our tutors scored as high as 1580 on the SAT — including a perfect 800 on Math. You're being coached by people who've already solved the puzzle across every subject.",
+    display: 'text', value: '1560+',
+    sub: '800 in Math & English',
+    label: 'All Tutors Scored',
+    desc: "Every tutor on our team scored 1560 or higher on the SAT — with 800s across both Math and English sections. You're being coached by people who've mastered the full test.",
   },
   {
     display: 'text', value: 'Desmos', sub: '& Pattern Specialists',
