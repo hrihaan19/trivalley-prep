@@ -12,20 +12,20 @@ const TUTORS = [
   {
     name: 'Utkarsh V.',
     role: 'Reading & Writing',
-    bio: 'Hi! I\'m Utkarsh, a rising Senior at Emerald High. I scored a 1570 on the SAT — 800 in English — and specialize in Reading & Writing and Integrated Math. From evidence-based comprehension and grammar by rule, to IM coursework, I help students build skills that transfer across every class.',
+    bio: 'Hi! I\'m Utkarsh, a rising Senior at Emerald High. I scored a 1560 on the SAT and specialize in Reading & Writing and Integrated Math. From evidence-based comprehension and grammar by rule, to IM coursework, I help students build skills that transfer across every class.',
     image: '/utkarsh.jpg',
   },
   {
     name: 'Atharva Y.',
     role: 'SAT Math & English',
-    bio: 'Hey Tri-Valley! I\'m Atharva, a rising Senior at Dublin High. I scored a 1570 on the SAT and teach SAT Math, English, and Integrated Math. Deep subject knowledge, personalized approach — I\'m committed to helping every student close the gap between where they are and where they need to be.',
+    bio: 'Hey Tri-Valley! I\'m Atharva, a rising Senior at Dublin High. I scored a 1570 on the SAT — including an 800 in English — and teach SAT Math, English, and Integrated Math. Deep subject knowledge, personalized approach — I\'m committed to helping every student close the gap.',
     image: '/atharva.jpg',
     rotate: 90,
   },
   {
     name: 'Rishi N.',
     role: 'SAT Math & English',
-    bio: 'Hey! I\'m Rishi, a rising Senior at Emerald High. I scored a 1560 on the SAT and love teaching both SAT Math & English and Integrated Math. I\'ve helped students gain 50–250 points on the SAT and level up in their math classes — and I\'m just getting started.',
+    bio: 'Hey! I\'m Rishi, a rising Senior at Emerald High. I scored a 1570 on the SAT and love teaching both SAT Math & English and Integrated Math. I\'ve helped students gain 50–250 points on the SAT and level up in their math classes — and I\'m just getting started.',
     image: '/rishi.jpg',
     objectPosition: 'center 15%',
   },
