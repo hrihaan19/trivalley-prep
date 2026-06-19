@@ -4,7 +4,7 @@ const TUTORS = [
   {
     name: 'Hrihaan B.',
     role: 'SAT Math · Desmos Specialist',
-    bio: 'Hi! Im Hrihaan. I scored a perfect 800 on SAT Math with a 1560 overall. I specialize in in DESMOS strategy for the digital SAT — turning the graphing calculator into a scoring weapon. I am a junior at Emerald High School, Dublin, CA.',
+    bio: 'Hi! Im Hrihaan, a rising Senior at Emerald High. I scored a perfect 800 on SAT Math with a 1560 overall, and I also teach Integrated Math — specializing in Desmos strategy and the kind of problem-solving patterns that show up in both SAT and IM coursework.',
     image: '/hrihaan.jpg',
     objectPosition: 'center 5%',
     scale: 1.2,
@@ -12,13 +12,13 @@ const TUTORS = [
   {
     name: 'Utkarsh V.',
     role: 'Reading & Writing',
-    bio: 'Hi there! My name is Utkarsh, I am an expert in SAT Reading & Writing with a strong preference in grammer/vocab questions. Scoring a 1540, I also focus on evidence-based comprehension, grammar by RULE, and passage elimination techniques.',
+    bio: 'Hi! My name is Utkarsh, a rising Senior at Emerald High. I scored a 1540 on the SAT and specialize in Reading & Writing — evidence-based comprehension, grammar by rule, and vocab in context. I also help students build the reading and reasoning skills that carry over into all their classes.',
     image: '/utkarsh.jpg',
   },
   {
     name: 'Atharva Y.',
     role: 'SAT Math & English',
-    bio: 'Hey trivalley community! Im Atharva and I bring deep subject knowledge and a personalized approach to every session. I am SO committed to helping Tri-Valley students close the gap between where they are and where they need to be. I scored a 1550!',
+    bio: 'Hey Tri-Valley! I\'m Atharva, a rising Senior at Dublin High. I scored a 1550 on the SAT and teach both SAT Math & English and Integrated Math. I bring deep subject knowledge and a personalized approach — committed to helping every student close the gap between where they are and where they need to be.',
     image: '/atharva.jpg',
     rotate: 90,
   },

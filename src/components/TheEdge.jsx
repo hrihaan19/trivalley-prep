@@ -21,18 +21,19 @@ function CountUp({ to, duration = 2000 }) {
 const STATS = [
   {
     display: 'number', value: 800,
-    label: 'SAT Math Score',
-    desc: "Every strategy here is battle-tested from a perfect score. You're being coached by someone who's already solved the puzzle.",
+    sub: '+ in Math & English',
+    label: 'Proven Tutor Scores',
+    desc: "Our tutors scored 800 on SAT Math and 1540+ overall — with strong performance across both sections. You're being coached by people who've already solved the puzzle.",
   },
   {
-    display: 'text', value: 'Desmos', sub: 'Specialist',
-    label: 'Calculator Mastery',
-    desc: 'Most students leave Desmos untouched. We weaponize it — cutting solve time in half. This is the digital SAT edge nobody talks about.',
+    display: 'text', value: 'Desmos', sub: '& Pattern Specialists',
+    label: 'Strategy Mastery',
+    desc: 'We weaponize Desmos for SAT Math and teach pattern recognition across every subject — so you learn to solve faster, not just harder.',
   },
   {
-    display: 'text', value: '1:1',
-    label: 'Private Sessions Only',
-    desc: "No group classes. No worksheets. Every session adapts in real time to where you're stuck and what you're almost there on.",
+    display: 'text', value: 'IM1 & IM2',
+    label: 'Integrated Math Cohorts',
+    desc: 'Our 3-week Integrated Math cohorts run daily with flexible attendance. Whether you\'re in IM1 or IM2, we build the foundations that make math click.',
   },
 ];
 

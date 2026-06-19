@@ -94,7 +94,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
         >
-          Dublin, CA · Tri-Valley SAT Prep
+          Dublin, CA · Tri-Valley Prep
         </motion.p>
 
         <motion.h1
@@ -103,8 +103,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 44 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          Score 1500+<br />
-          <span className="text-accent">Master The DSAT.</span>
+          Build Your Edge.<br />
+          <span className="text-accent">Score Higher.</span>
         </motion.h1>
 
         <motion.p
@@ -112,8 +112,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.55 }}
         >
-          The Desmos advantage, perfected. Private SAT tutoring
-          for Tri-Valley students who mean business.
+          Expert SAT prep and Integrated Math tutoring for
+          Tri-Valley students who want real results.
         </motion.p>
 
         <motion.div

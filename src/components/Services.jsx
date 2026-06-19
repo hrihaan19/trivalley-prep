@@ -5,7 +5,6 @@ const PROGRAMS = [
     tag: 'SAT Prep',
     title: 'Digital SAT',
     subtitle: 'Math & Reading & Writing',
-    audience: 'High School',
     features: [
       'Desmos graphing calculator strategy for SAT Math',
       'Digital SAT format, interface & timing strategy',
@@ -17,10 +16,9 @@ const PROGRAMS = [
     highlight: true,
   },
   {
-    tag: 'Middle School',
+    tag: 'Integrated Math',
     title: 'Integrated Math 1',
     subtitle: 'Foundations & Problem Solving',
-    audience: 'Middle School',
     features: [
       'Linear equations, inequalities & functions',
       'Geometry fundamentals and reasoning',
@@ -28,21 +26,20 @@ const PROGRAMS = [
       'Real-world problem solving strategies',
       'Personalized pace — no one gets left behind',
     ],
-    note: 'Built for students entering or currently in IM1.',
+    note: 'Open to any student currently in or preparing for IM1.',
   },
   {
-    tag: 'Middle School',
+    tag: 'Integrated Math',
     title: 'Integrated Math 2',
     subtitle: 'Algebra, Geometry & Beyond',
-    audience: 'Middle School',
     features: [
       'Quadratic functions and polynomial operations',
       'Triangle theorems and circle geometry',
       'Probability and statistical reasoning',
       'Proofs, logic, and mathematical argumentation',
-      'Bridges concepts toward high school math',
+      'Bridges concepts toward advanced math',
     ],
-    note: 'Built for students entering or currently in IM2.',
+    note: 'Open to any student currently in or preparing for IM2.',
   },
 ];
 
@@ -67,7 +64,7 @@ export default function Services() {
             Summer programs.
           </h2>
           <p className="font-dm text-zinc-400 text-base mt-5 max-w-xl leading-relaxed">
-            SAT prep for high schoolers and Integrated Math for middle schoolers — all in a cohort format built around your summer schedule.
+            SAT prep and Integrated Math cohorts built for any student who wants to get ahead this summer.
           </p>
         </motion.div>
 
