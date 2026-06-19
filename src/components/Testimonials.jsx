@@ -12,9 +12,9 @@ const TESTIMONIALS = [
     badge: null, stars: 5,
   },
   {
-    name: 'Dylan C.', detail: 'Student · Tri-Valley',
-    quote: "The custom plan targeted my actual weak spots instead of covering everything generically. Sessions were efficient and the progress was visible every single week.",
-    badge: '1310 → 1520', stars: 5,
+    name: 'Priya S.', detail: 'Parent · San Ramon, CA',
+    quote: "My daughter was really struggling with IM1 — we tried other tutors but nothing clicked. After the cohort she went from barely passing to finishing the semester with an A. The way they break down concepts actually makes sense.",
+    badge: 'IM1 · C → A', stars: 5,
   },
 ];
 

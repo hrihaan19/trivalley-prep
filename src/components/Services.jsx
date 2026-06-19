@@ -45,9 +45,9 @@ const PROGRAMS = [
 
 const COHORT_DETAILS = [
   { label: '3 Weeks', sub: 'per cohort' },
-  { label: 'Daily', sub: 'morning calls' },
-  { label: 'Sun – Sat', sub: 'every day of the week' },
-  { label: 'Flexible', sub: 'join the classes that work for you' },
+  { label: '10 hrs', sub: 'of instruction per cohort' },
+  { label: 'Flexible', sub: 'join the sessions that work for you' },
+  { label: 'Online', sub: 'accessible from anywhere' },
 ];
 
 export default function Services() {

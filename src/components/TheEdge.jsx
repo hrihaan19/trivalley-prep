@@ -20,10 +20,9 @@ function CountUp({ to, duration = 2000 }) {
 
 const STATS = [
   {
-    display: 'number', value: 800,
-    sub: '+ in Math & English',
-    label: 'Proven Tutor Scores',
-    desc: "Our tutors scored 800 on SAT Math and 1540+ overall — with strong performance across both sections. You're being coached by people who've already solved the puzzle.",
+    display: 'number', value: 1580,
+    label: 'Top Tutor SAT Score',
+    desc: "Our tutors scored as high as 1580 on the SAT — including a perfect 800 on Math. You're being coached by people who've already solved the puzzle across every subject.",
   },
   {
     display: 'text', value: 'Desmos', sub: '& Pattern Specialists',
@@ -33,7 +32,7 @@ const STATS = [
   {
     display: 'text', value: 'IM1 & IM2',
     label: 'Integrated Math Cohorts',
-    desc: 'Our 3-week Integrated Math cohorts run daily with flexible attendance. Whether you\'re in IM1 or IM2, we build the foundations that make math click.',
+    desc: 'Our 3-week Integrated Math cohorts give you 10 hours of focused instruction with flexible scheduling. Whether you\'re in IM1 or IM2, we build the foundations that make math click.',
   },
 ];
 
