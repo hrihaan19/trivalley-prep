@@ -26,7 +26,8 @@ const TUTORS = [
     name: 'Rishi N.',
     role: 'SAT Math & English',
     bio: 'Hey! My name is Rishi and I am a rising Senior at Emerald High. I love teaching both Math and English for the SAT. I achieved a 1540 on the SAT myself, and have helped several of my friends gain higher SAT scores, ranging from 50-250 points!',
-    initials: 'RN',
+    image: '/rishi.jpg',
+    objectPosition: 'center 15%',
   },
 ];
 
